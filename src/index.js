@@ -2,7 +2,7 @@ import './style.css';
 import {
   task, todoTask,
   saveTaskId, saveTask,
-} from '../savetask.js';
+} from './savetask.js';
 import check from './checkbox.js';
 
 const todoList = document.querySelector('#todo');
