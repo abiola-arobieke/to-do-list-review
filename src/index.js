@@ -1,7 +1,5 @@
-import './style.css';
 import {
-  task, todoTask,
-  saveTaskId, saveTask,
+  task, todoTask, saveTaskId, saveTask,
 } from './savetask.js';
 import check from './checkbox.js';
 
