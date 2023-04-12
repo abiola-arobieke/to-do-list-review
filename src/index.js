@@ -1,3 +1,4 @@
+import './styles.css';
 import {
   task, todoTask, saveTaskId, saveTask,
 } from './savetask.js';
