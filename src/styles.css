@@ -1,10 +1,13 @@
-body {
+* {
+  font-size: 15px;
   font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
   background-color: #f6f6f6;
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 15px;
   font-weight: 300;
 }
 
@@ -30,7 +33,6 @@ li {
 button {
   margin: 0 auto;
   background-color: #e0e0e0;
-  font-size: 15px;
   cursor: pointer;
 }
 
@@ -55,9 +57,9 @@ button {
   float: right;
 }
 
-input[type='text' i] {
+/* input[type='text' i] {
   font-size: 15px;
-}
+} */
 
 .edit-task {
   margin-right: 8px;
