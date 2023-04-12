@@ -3,13 +3,12 @@ import {
 } from './savetask.js';
 import check from './checkbox.js';
 
-const todoList = document.querySelector('#todo');
 const newTask = document.getElementById('new-task');
-let moreBtn;
 
 // create html tags and load data
 const loadTask = () => {
   // remove old list item that was created
+  const todoList = document.querySelector('#todo');
   while (todoList.hasChildNodes()) {
     todoList.removeChild(todoList.firstChild);
   }
@@ -19,7 +18,7 @@ const loadTask = () => {
       <div class="px-10-py-15 text-gray border-bottom">
           <input type="checkbox" class="checkbox" id="${index}" value="${
   todo.completed
-}" />
+}" >
           <span class="${!todo.completed}">${todo.description}</span>
           <del class=" ${todo.completed}">
               <span>${todo.description}</span>
@@ -32,9 +31,9 @@ const loadTask = () => {
       </div>
       <div class="edit-container px-10-py-15 text-gray border-bottom bg-yellow hide">
           <input type="checkbox" class="edit-task bg-yellow" id="${index}" 
-          value="${todo.completed}"/>
+          value="${todo.completed}">
           <input class="text-gray edit-input border-none bg-yellow" type="text" 
-          value="${todo.description}" />
+          value="${todo.description}">
           <div class="dropdown more">
               <button class="border-none bg-yellow">
                   <i class="fa fa-trash-o ft-20 text-gray" aria-hidden="true"></i>
@@ -47,7 +46,7 @@ const loadTask = () => {
     todoList.appendChild(liTag);
   });
   // Get all more buttons
-  moreBtn = document.querySelectorAll('.drop-btn');
+  const moreBtn = document.querySelectorAll('.drop-btn');
   moreBtn.forEach((eachMoreBtn, btnIndex) => {
     // toggle more button to edit or delete a task
     eachMoreBtn.addEventListener('click', () => {
