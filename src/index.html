@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container d-flex flex-col">
+          <h1 class="align-center">Minimalist</h1>
+          <div class="todo-list d-flex flex-col">
+            <div class="day-task d-flex bg-white border-bottom justify-spc-btw">
+              <h3
+                class="todo-title px-10-py-15 bg-white text-gray border-bottom m-none"
+              >
+                Today's todo
+              </h3>
+              <i
+                class="fa fa-refresh refresh bg-white text-gray align-center"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <input
+                id="new-task"
+                type="text"
+                class="add-task-text px-10-py-15 border-bottom border-none"
+                placeholder="Add to your list..."
+                autofocus
+              >
+            <ul id="todo" class="d-flex flex-col bg-white m-none"></ul>
+            <div class="clear-all d-flex justify-content-ctr bg-light-gray">
+              <button type="button" id="clear-task" class="text-gray border-none">
+                <u>Clear all completed</u>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
